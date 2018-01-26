@@ -5,9 +5,11 @@ import { TabNavigator } from 'react-navigation';
 import ClientScreen from '../screens/ClientScreen';
 import EmployeeScreen from '../screens/EmployeeScreen';
 import NewScreen from '../screens/NewScreen';
+import AddCarScreen from '../screens/AddCarScreen';
+import BoughtCarsScreen from '../screens/BoughtCarsScreen';
 
 export const Router = TabNavigator({
-  ClienScreenNavigator: {
+  ClientScreenNavigator: {
     screen: StackNavigator({
       ClientScreen: {
         screen: ClientScreen,
@@ -20,6 +22,12 @@ export const Router = TabNavigator({
         navigationOptions: {
           title: 'New'
         }
+      },
+      BoughtCarsScreen: {
+        screen: BoughtCarsScreen,
+        navigationOptions: {
+          title: 'Your Cars'
+        }
       }
     })
   },
@@ -31,10 +39,10 @@ export const Router = TabNavigator({
           title: 'Employee'
         }
       },
-      NewScreen: {
-        screen: NewScreen,
+      AddCarScreen: {
+        screen: AddCarScreen,
         navigationOptions: {
-          title: 'New'
+          title: 'Add Car'
         }
       }
     })

@@ -3,7 +3,7 @@ import axios from 'axios';
 class RequestService {
 	constructor() {
 		this.config = {
-      apiPath:                    'http://172.25.5.198:4000',
+      apiPath:                    'http://192.168.1.100:4000',
 
       globalConfig: {
         headers: {
